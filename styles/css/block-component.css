@@ -24,7 +24,7 @@ body { margin: 0; }
   background: var(--white);
   border-radius: 20px;
   padding: var(--space-200) var(--space-200) var(--space-500);
-  box-shadow: 0 25px 25px rgba(31, 49, 79, 0.15);
+  box-shadow: 0 0 10px rgba(31, 49, 79, 0.15);
   text-align: center;
   gap: var(--space-300);
 }
