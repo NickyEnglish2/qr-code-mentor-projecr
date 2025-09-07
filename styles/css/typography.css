@@ -1,0 +1,49 @@
+/* css/typography.css
+   Typography tokens, base styles and text presets
+   Font: Outfit (400, 700). If you self-host, replace the @import with your @font-face.
+*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
+
+  /* Text Preset 1 — Outfit Bold, 22px, 120% line-height, 0px tracking */
+  --tp1-size: 22px;
+  --tp1-lh: 1.2;       /* 120% */
+  --tp1-track: 0px;
+  --tp1-weight: 700;
+
+  /* Text Preset 2 — Outfit Regular, 15px, 140% line-height, 0.2px tracking */
+  --tp2-size: 15px;
+  --tp2-lh: 1.4;       /* 140% */
+  --tp2-track: 0.2px;
+  --tp2-weight: 400;
+}
+
+/* App base (optional, adjust to taste) */
+html { font-size: 16px; }
+body {
+  font-family: var(--font-sans);
+  color: var(--color-text-primary);
+  background: var(--color-surface);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Presets */
+.text-preset-1 {
+  font-family: var(--font-sans);
+  font-weight: var(--tp1-weight);
+  font-size: var(--tp1-size);
+  line-height: calc(var(--tp1-lh) * 1em);
+  letter-spacing: var(--tp1-track);
+}
+
+.text-preset-2 {
+  font-family: var(--font-sans);
+  font-weight: var(--tp2-weight);
+  font-size: var(--tp2-size);
+  line-height: calc(var(--tp2-lh) * 1em);
+  letter-spacing: var(--tp2-track);
+  color: var(--color-text-secondary);
+}

@@ -1,0 +1,41 @@
+/* css/spacing.css
+   Spacing tokens + a small set of margin/padding/gap utilities
+   Scale from the style guide: 500=40px, 300=24px, 200=16px
+*/
+:root {
+  --space-500: 40px;
+  --space-300: 24px;
+  --space-200: 16px;
+}
+
+/* Padding utilities */
+.p-500  { padding: var(--space-500); }
+.p-300  { padding: var(--space-300); }
+.p-200  { padding: var(--space-200); }
+.px-500 { padding-inline: var(--space-500); }
+.px-300 { padding-inline: var(--space-300); }
+.px-200 { padding-inline: var(--space-200); }
+.py-500 { padding-block: var(--space-500); }
+.py-300 { padding-block: var(--space-300); }
+.py-200 { padding-block: var(--space-200); }
+
+/* Margin utilities */
+.m-500  { margin: var(--space-500); }
+.m-300  { margin: var(--space-300); }
+.m-200  { margin: var(--space-200); }
+.mx-500 { margin-inline: var(--space-500); }
+.mx-300 { margin-inline: var(--space-300); }
+.mx-200 { margin-inline: var(--space-200); }
+.my-500 { margin-block: var(--space-500); }
+.my-300 { margin-block: var(--space-300); }
+.my-200 { margin-block: var(--space-200); }
+
+/* Gap utilities (for flex/grid) */
+.gap-500 { gap: var(--space-500); }
+.gap-300 { gap: var(--space-300); }
+.gap-200 { gap: var(--space-200); }
+
+/* Stack helper: apply vertical rhythm to children */
+.stack-500 > * + * { margin-top: var(--space-500); }
+.stack-300 > * + * { margin-top: var(--space-300); }
+.stack-200 > * + * { margin-top: var(--space-200); }
