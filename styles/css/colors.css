@@ -1,0 +1,35 @@
+/* css/colors.css
+   Color tokens + minimal utilities
+   Palette from the style guide: Slate-900, Slate-500, Slate-300, White
+*/
+:root {
+  /* Raw palette */
+  --slate-900: #1F314F;
+  --slate-500: #68778D;
+  --slate-300: #D5E1EF;
+  --white: #FFFFFF;
+
+  /* Semantic aliases (tweak as your app grows) */
+  --color-text-primary: var(--slate-900);
+  --color-text-secondary: var(--slate-500);
+  --color-surface: var(--white);
+  --color-border: var(--slate-300);
+}
+
+/* Background utilities */
+.bg-slate-900 { background-color: var(--slate-900); }
+.bg-slate-500 { background-color: var(--slate-500); }
+.bg-slate-300 { background-color: var(--slate-300); }
+.bg-white     { background-color: var(--white); }
+
+/* Text color utilities */
+.text-slate-900 { color: var(--slate-900); }
+.text-slate-500 { color: var(--slate-500); }
+.text-slate-300 { color: var(--slate-300); }
+.text-white     { color: var(--white); }
+
+/* Border color utilities */
+.border-slate-900 { border-color: var(--slate-900); }
+.border-slate-500 { border-color: var(--slate-500); }
+.border-slate-300 { border-color: var(--slate-300); }
+.border-white     { border-color: var(--white); }

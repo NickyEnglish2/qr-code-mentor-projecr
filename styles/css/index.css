@@ -1,0 +1,6 @@
+/* css/index.css
+   Entry point — import once in your app
+*/
+@import "./colors.css";
+@import "./typography.css";
+@import "./spacing.css";
